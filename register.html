@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Smart Collect - Register</title>
+  <script type="module" src="./scripts/register.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+  <div class="w-full max-w-sm p-6 bg-white rounded-xl shadow-md">
+    <h1 class="text-2xl font-bold mb-4 text-center">Jiunge na Smart Collect</h1>
+    <input type="email" id="email" placeholder="Email" class="w-full mb-3 p-2 border rounded" />
+    <input type="password" id="password" placeholder="Password" class="w-full mb-3 p-2 border rounded" />
+    <input type="password" id="confirmPassword" placeholder="Thibitisha Password" class="w-full mb-4 p-2 border rounded" />
+    <button id="registerBtn" class="w-full bg-green-600 text-white py-2 rounded">Jisajili</button>
+    <p id="status" class="text-sm text-red-500 mt-2"></p>
+    <p class="mt-3 text-center">
+      Una akaunti? <a href="index.html" class="text-blue-600 underline">Ingia hapa</a>
+    </p>
+  </div>
+</body>
+</html>

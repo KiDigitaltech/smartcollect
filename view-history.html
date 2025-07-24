@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Historia ya Michango - Smart Collect</title>
+  <script type="module" src="./scripts/view-history.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-100 min-h-screen">
+  <header class="bg-blue-700 text-white p-4 flex justify-between items-center">
+    <h1 class="text-lg font-bold">Historia ya Michango</h1>
+    <button id="backBtn" class="bg-gray-200 text-black px-3 py-1 rounded hover:bg-gray-300">Rudi</button>
+  </header>
+
+  <main class="p-4 max-w-2xl mx-auto bg-white rounded shadow mt-6">
+    <div id="historyList" class="space-y-2"></div>
+
+    <div class="mt-4 font-bold text-lg text-right">
+      Jumla: <span id="totalAmount">0</span> TZS
+    </div>
+
+    <div class="mt-6 text-center">
+      <button id="exportBtn" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">
+        Pakua PDF
+      </button>
+    </div>
+  </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</body>
+</html>

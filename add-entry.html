@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ongeza Mchangiaji - Smart Collect</title>
+  <script type="module" src="./scripts/add-entry.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-100 min-h-screen">
+  <header class="bg-blue-700 text-white p-4 flex justify-between items-center">
+    <h1 class="text-lg font-bold">Ongeza Mchangiaji</h1>
+    <button id="backBtn" class="bg-gray-200 text-black px-3 py-1 rounded hover:bg-gray-300">Rudi</button>
+  </header>
+
+  <main class="p-4 max-w-md mx-auto bg-white rounded shadow mt-6">
+    <form id="entryForm" class="space-y-4">
+      <div>
+        <label for="fullName" class="block font-semibold mb-1">Jina la Mchangiaji</label>
+        <input type="text" id="fullName" class="w-full p-2 border rounded" required />
+      </div>
+      <div>
+        <label for="phone" class="block font-semibold mb-1">Namba ya Simu</label>
+        <input type="tel" id="phone" class="w-full p-2 border rounded" placeholder="07xxxxxxxx" required />
+      </div>
+      <div>
+        <label for="amount" class="block font-semibold mb-1">Kiasi alichotoa (TZS)</label>
+        <input type="number" id="amount" class="w-full p-2 border rounded" required />
+      </div>
+      <button type="submit" class="bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700 w-full">
+        Hifadhi Mchangiaji
+      </button>
+      <p id="status" class="text-sm mt-2"></p>
+    </form>
+  </main>
+</body>
+</html>

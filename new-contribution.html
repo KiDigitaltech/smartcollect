@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Smart Collect - Unda Mchango Mpya</title>
+  <script type="module" src="./scripts/new-contribution.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-100 min-h-screen">
+  <header class="bg-blue-700 text-white p-4 flex justify-between items-center">
+    <h1 class="text-lg font-bold">Smart Collect - Unda Mchango Mpya</h1>
+    <button id="backBtn" class="bg-gray-200 text-black px-3 py-1 rounded hover:bg-gray-300">Rudi</button>
+  </header>
+
+  <main class="p-4 max-w-md mx-auto bg-white rounded shadow mt-6">
+    <form id="contributionForm" class="space-y-4">
+      <div>
+        <label for="title" class="block font-semibold mb-1">Jina la Mchango</label>
+        <input type="text" id="title" class="w-full p-2 border rounded" placeholder="Mfano: Msiba wa Mzee John" required />
+      </div>
+      <div>
+        <label for="description" class="block font-semibold mb-1">Maelezo (hiari)</label>
+        <textarea id="description" class="w-full p-2 border rounded" rows="3" placeholder="Taja maelezo zaidi"></textarea>
+      </div>
+      <button type="submit" class="bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700 w-full">
+        Hifadhi Mchango
+      </button>
+      <p id="status" class="text-sm mt-2"></p>
+    </form>
+  </main>
+</body>
+</html>
